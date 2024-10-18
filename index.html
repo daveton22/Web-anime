@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>anime</title>
+  </head>
+  <body>
+    <header>
+      <!-- Membuat website Anime simpel dan sederhana dengan search input -->
+      <h1>Website Anime</h1>
+    </header>
+    <!-- Buat search input untuk mencari judul anime -->
+    <main>
+      <div>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Cari Anime"
+          class="search-box"
+        />
+        <button id="search" class="search-button">Cari</button>
+      </div>
+
+      <!-- Tampung anime -->
+      <div id="listAnime">
+        <div id="pagination">
+          <button id="prev">Previous</button>
+          <button id="next">Next</button>
+        </div>
+        <div class="container-card"></div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
